@@ -1,0 +1,33 @@
+/* foto de capa do site */
+#foto-capa{
+    position: relative; 
+    text-align: center;
+}
+
+#div-capa-texto{
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    font-size: 5vw;
+}
+
+#div-capa-imagem {
+    animation: zoom 15s infinite;
+    max-width: 100%;
+}
+  
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*  */
