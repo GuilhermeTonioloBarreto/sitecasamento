@@ -19,20 +19,25 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   //display the result
-  document.getElementById("div-dias").innerHTML = days;
-  document.getElementById("div-horas").innerHTML = hours;
-  document.getElementById("div-minutos").innerHTML = minutes;
-  document.getElementById("div-segundos").innerHTML = seconds;  
+  for(let i = 0; i < 2; i++){
+    document.getElementsByClassName("div-dias")[i].innerHTML = days;
+    document.getElementsByClassName("div-horas")[i].innerHTML = hours;
+    document.getElementsByClassName("div-minutos")[i].innerHTML = minutes;
+    document.getElementsByClassName("div-segundos")[i].innerHTML = seconds;
+  }
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("div-dias").innerHTML = "0";
-    document.getElementById("div-horas").innerHTML = "0";
-    document.getElementById("div-minutos").innerHTML = "0";
-    document.getElementById("div-segundos").innerHTML = "0";
+    for(let i = 0; i < 2; i++){
+      document.getElementsByClassName("div-dias")[i].innerHTML = "0";
+      document.getElementsByClassName("div-horas")[i].innerHTML = "0";
+      document.getElementsByClassName("div-minutos")[i].innerHTML = "0";
+      document.getElementsByClassName("div-segundos")[i].innerHTML = "0";
+    }
     document.getElementById("contagem-final").style.display = "block";
   }
+  
 }, 1000);
 
 // ------------------        -----------------

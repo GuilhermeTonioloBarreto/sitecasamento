@@ -71,38 +71,64 @@
 
     <!-- contagem regressiva -->
     <div class="container-flush">
- 
       <h1 class="text-center"><small>Contagem Regressiva para o grande dia</small></h1>
- 
-      <!-- flex collumns com a contagem regressiva-->
-      <div class="d-sm-flex flex-sm-wrap justify-content-center align-content-start">
+    </div>
 
-        <div class="text-center mx-3">
-          <div id="div-dias" class="display-4 bg-dark p-2 text-white">0</div>
+    <!-- flex collumns para a contagem regressiva - telas de PC -->
+    <div class="container-flush d-none d-sm-block">
+        <div class="d-sm-flex justify-content-center align-content-start">
+          <div class="text-center mx-3">
+            <div class="div-dias display-4 bg-dark p-2 text-white">0</div>
+            <div class="h5 bg-light text-dark p-1">dias</div>
+          </div>
+
+          <div class="text-center mx-3">
+            <div class="div-horas display-4 bg-dark p-2 text-white">0</div>
+            <div class="h5 bg-light text-dark p-1">hs</div>
+          </div>
+
+          <div class="text-center mx-3">
+            <div class="div-minutos display-4 bg-dark p-2 text-white">0</div>
+            <div class="h5 bg-light text-dark p-1">min</div>
+          </div>
+
+          <div class="text-center mx-3">
+            <div class="div-segundos display-4 bg-dark p-2 text-white">0</div>
+            <div class="h5 bg-light text-dark p-1">seg</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- row para contagem regressiva - para telas pequenas -->
+    <div class="container d-sm-none">
+      <div class="row">
+        <div class="col-3 text-center">
+          <div class="div-dias display-4 bg-dark p-2 text-white">0</div>
           <div class="h5 bg-light text-dark p-1">dias</div>
         </div>
 
-        <div class="text-center mx-3">
-          <div id="div-horas" class="display-4 bg-dark p-2 text-white">0</div>
-          <div class="h5 bg-light text-dark p-1">hs</div>
+        <div class="col-3 text-center">
+          <div class="div-horas display-4 bg-dark p-2 text-white">0</div>
+          <div class="h5 bg-light text-dark p-1">hrs</div>
         </div>
 
-        <div class="text-center mx-3">
-          <div id="div-minutos" class="display-4 bg-dark p-2 text-white">0</div>
+        <div class="col-3 text-center">
+          <div class="div-minutos display-4 bg-dark p-2 text-white">0</div>
           <div class="h5 bg-light text-dark p-1">min</div>
         </div>
 
-        <div class="text-center mx-3">
-          <div id="div-segundos" class="display-4 bg-dark p-2 text-white">0</div>
+        <div class="col-3 text-center">
+          <div class="div-segundos display-4 bg-dark p-2 text-white">0</div>
           <div class="h5 bg-light text-dark p-1">seg</div>
         </div>
       </div>
+    </div>
 
-      <!-- Mensagem do grande dia! -->
+    <!-- Mensagem do grande dia! -->
+    <div class="container-flush">
       <h1 id="contagem-final" class="text-center"><small>O grande dia já chegou!</small></h1>
-    </div>    
-  
-  
+    </div>
+    
   </body>
     
 
