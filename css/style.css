@@ -34,3 +34,12 @@
 #contagem-final{
     display: none;
 }
+
+/* ------- botao de copiar pix -------- */
+#pix-copiado{
+    display: none;
+}
+
+ 
+
+

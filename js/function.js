@@ -40,4 +40,25 @@ var x = setInterval(function() {
   
 }, 1000);
 
-// ------------------        -----------------
+// ------- Copiar pix para área de transferência -----------------
+function copiarPix(){  
+  let pixCopiado = document.getElementById("pix-copiado");
+  const pix = "48781278802";
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(pix);
+    pixCopiado.style.display = "inline";
+
+    countDownSeconds();
+    }   
+}
+
+function countDownSeconds(){
+  let  timeleft = 2;
+  let downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("pix-copiado").style.display = "none";
+  }
+  timeleft -= 1;
+  }, 1000);
+}
