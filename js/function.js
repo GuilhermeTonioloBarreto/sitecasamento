@@ -41,6 +41,10 @@ var x = setInterval(function() {
 }, 1000);
 
 // ------- Copiar pix para área de transferência -----------------
+//garante que a frase "pix copiado" não está exibida
+document.getElementById("pix-copiado").style.display = "none";
+
+// funcao que exibe por um tempo a frase "pix copiado"
 function copiarPix(){  
   let pixCopiado = document.getElementById("pix-copiado");
   const pix = "48781278802";
