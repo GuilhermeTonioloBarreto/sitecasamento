@@ -16,47 +16,39 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-none d-sm-block d-md-none" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
+    <div id="link0" >
+      <nav class="navbar navbar-expand-md bg-dark shadow navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#link0">
+            <img src="img/0_logo.png" alt="Logo do casamento" style="width:40px;" class="rounded-pill">  
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#link1">Contagem Regressiva</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link2">Nossa História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link3">Pix Lua de Mel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link4">Informações do Casamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link5">Local da Cerimônia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#link6">Fotos do Casal</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav> 
-
-     <!-- Offcanvas Sidebar -->
-    <div class="offcanvas offcanvas-start" id="demo">
-      <div class="offcanvas-header">
-        <h1 class="offcanvas-title">Heading</h1>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-      </div>
+      </nav> 
     </div>
 
     <!-- foto capa do site -->
@@ -70,74 +62,74 @@
     </div>
 
     <!-- contagem regressiva -->
-    <div class="container-fluid">
-      <h1 class="text-center my-4"><small>Contagem Regressiva para o grande dia</small></h1>
-    </div>
+    <div id="link1" class="container-fluid py-4">
+      <h1 class="text-center"><small>Contagem Regressiva para o grande dia</small></h1>
 
-    <!-- flex collumns para a contagem regressiva - telas de PC -->
-    <div class="container-fluid d-none d-sm-block">
-        <div class="d-sm-flex justify-content-center align-content-start">
-          <div class="text-center mx-3">
+      <!-- flex collumns para a contagem regressiva - telas de PC -->
+      <div class="container-fluid d-none d-sm-block">
+          <div class="d-sm-flex justify-content-center align-content-start">
+            <div class="text-center mx-3">
+              <div class="div-dias display-4 bg-dark p-2 text-white">0</div>
+              <div class="h5 bg-light text-dark p-1">dias</div>
+            </div>
+
+            <div class="text-center mx-3">
+              <div class="div-horas display-4 bg-dark p-2 text-white">0</div>
+              <div class="h5 bg-light text-dark p-1">hs</div>
+            </div>
+
+            <div class="text-center mx-3">
+              <div class="div-minutos display-4 bg-dark p-2 text-white">0</div>
+              <div class="h5 bg-light text-dark p-1">min</div>
+            </div>
+
+            <div class="text-center mx-3">
+              <div class="div-segundos display-4 bg-dark p-2 text-white">0</div>
+              <div class="h5 bg-light text-dark p-1">seg</div>
+            </div>
+          </div>
+      </div>
+
+      <!-- row para contagem regressiva - para telas pequenas -->
+      <div class="container d-sm-none">
+        <div class="row">
+          <div class="col-3 text-center">
             <div class="div-dias display-4 bg-dark p-2 text-white">0</div>
             <div class="h5 bg-light text-dark p-1">dias</div>
           </div>
 
-          <div class="text-center mx-3">
+          <div class="col-3 text-center">
             <div class="div-horas display-4 bg-dark p-2 text-white">0</div>
-            <div class="h5 bg-light text-dark p-1">hs</div>
+            <div class="h5 bg-light text-dark p-1">hrs</div>
           </div>
 
-          <div class="text-center mx-3">
+          <div class="col-3 text-center">
             <div class="div-minutos display-4 bg-dark p-2 text-white">0</div>
             <div class="h5 bg-light text-dark p-1">min</div>
           </div>
 
-          <div class="text-center mx-3">
+          <div class="col-3 text-center">
             <div class="div-segundos display-4 bg-dark p-2 text-white">0</div>
             <div class="h5 bg-light text-dark p-1">seg</div>
           </div>
         </div>
-    </div>
+      </div>
 
-    <!-- row para contagem regressiva - para telas pequenas -->
-    <div class="container d-sm-none">
-      <div class="row">
-        <div class="col-3 text-center">
-          <div class="div-dias display-4 bg-dark p-2 text-white">0</div>
-          <div class="h5 bg-light text-dark p-1">dias</div>
-        </div>
-
-        <div class="col-3 text-center">
-          <div class="div-horas display-4 bg-dark p-2 text-white">0</div>
-          <div class="h5 bg-light text-dark p-1">hrs</div>
-        </div>
-
-        <div class="col-3 text-center">
-          <div class="div-minutos display-4 bg-dark p-2 text-white">0</div>
-          <div class="h5 bg-light text-dark p-1">min</div>
-        </div>
-
-        <div class="col-3 text-center">
-          <div class="div-segundos display-4 bg-dark p-2 text-white">0</div>
-          <div class="h5 bg-light text-dark p-1">seg</div>
-        </div>
+      <!-- Mensagem do grande dia! -->
+      <div class="container-fluid">
+        <h1 id="contagem-final" class="text-center"><small>O grande dia já chegou!</small></h1>
       </div>
     </div>
 
-    <!-- Mensagem do grande dia! -->
-    <div class="container-fluid">
-      <h1 id="contagem-final" class="text-center"><small>O grande dia já chegou!</small></h1>
-    </div>
-    
     <!-- História do casal-->
-    <div class="container-fluid bg-light">
+    <div id="link2" class="container-fluid bg-light py-4">
       <h1 class="text-center"><small>Nossa História</small></h1>
 
       <div class="container">
         <div class="row">
 
           <div class="col-md-6 text-center">
-            <img class="img-fluid shadow p-3 mb-5 bg-body rounded" src="img/2_nossa_historia.png" alt="topo de bolo do casamento civil" width="400px">
+            <img class="img-fluid shadow p-3 mb-4 bg-body rounded" src="img/2_nossa_historia.png" alt="topo de bolo do casamento civil" width="400px">
           </div>
 
           <div class="col-md-6 text-start">
@@ -159,7 +151,7 @@
     </div>
 
     <!-- Pix Lua de Mel -->
-    <div class="container-fluid">
+    <div id="link3" class="container-fluid py-4">
       <h1 class="text-center"><small>Pix Lua de Mel</small></h1>
 
       <div class="container">
@@ -184,7 +176,7 @@
           <div class="col-md-6 text-center">
             <figure class="figure">
               <img src="img/3_lua_de_mel.png" class="figure-img img-fluid rounded shadow p-3 bg-body" alt="foto praia de João Pessoa" width="400px">
-              <figcaption class="figure-caption">Praia João Pessoa - Paraíba</figcaption>
+               <!-- <figcaption class="figure-caption">Praia João Pessoa - Paraíba</figcaption> -->
             </figure>
           </div> 
 
@@ -193,18 +185,18 @@
     </div>
 
     <!-- Informações do Casamento -->
-    <div class="container-fluid bg-light">
+    <div id="link4" class="container-fluid bg-light py-4">
       <h1 class="text-center"><small>Informações do casamento</small></h1>
 
       <div class="container">
         <div class="row">
 
           <div class="col-md-4 text-center">
-            <img class="img-fluid shadow p-3 mb-5 bg-body rounded" src="img/4_convite_casamento_1.png" alt="convite de casamento - parte da frente" width="300px">
+            <img class="img-fluid shadow p-3 mb-3 bg-body rounded" src="img/4_convite_casamento_1.png" alt="convite de casamento - parte da frente" width="300px">
           </div>
 
           <div class="col-md-4 text-center">
-            <img class="img-fluid shadow p-3 mb-5 bg-body rounded" src="img/4_convite_casamento_2.png" alt="convite casamento - parte de trás" width="300px">
+            <img class="img-fluid shadow p-3 mb-3 bg-body rounded" src="img/4_convite_casamento_2.png" alt="convite casamento - parte de trás" width="300px">
           </div>
 
           <div class="col-md-4 text-start">
@@ -227,10 +219,10 @@
     </div>
     
     <!-- Local da Cerimônia -->
-    <div class="container-fluid pb-3">
+    <div id="link5" class="container-fluid py-4">
       <h1 class="text-center"><small>Local da Cerimônia</small></h1>
 
-      <div class="container">
+      <div class="container pb-4">
         <div class="text-center shadow bg-body rounded">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.587001674863!2d-46.996844485022436!3d-23.54735228468987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0f45eefc8381%3A0x3a4f5fe088b1ba69!2sBuffet%20Supreme%20Love!5e0!3m2!1sen!2sbr!4v1647302825701!5m2!1sen!2sbr" 
         width="100%" height="300px" style="border:0;" allowfullscreen="" 
@@ -239,13 +231,74 @@
       </div>
     </div>
 
-    
-
     <!-- Fotos do Casal -->
-    
-    
-    
+    <div id="link6" class="container-fluid bg-light py-4">
+      <h1 class="text-center"><small>Fotos do Casal</small></h1>
+
+      <!-- Fotos casamento civil -->
+      <h2 class="text-center"><small>Fotos Casamento Civil</small></h2>
+
+      <!-- Carousel -->
+      <div id="fotos1" class="carousel slide pb-4" data-interval="false">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button data-bs-target="#fotos1" data-bs-slide-to="0" class="active"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="1"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="2"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="3"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="4"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="5"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="6"></button>
+          <button data-bs-target="#fotos1" data-bs-slide-to="7"></button>
+        </div>
+  
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="img/f1/f11.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f17.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f12.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f13.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f14.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f15.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f16.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/f1/f18.png" alt="fotos casamento civil" class="mx-auto d-block img-fluid shadow rounded p-3 bg-body" width="500px">
+          </div>
+        </div>
+  
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#fotos1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fotos1" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark pb-3 shadow">
+      <div class="text-center pt-3 pb-2 text-white">Casamento Guilherme e Larissa</div>
+      <a href="#link0">
+        <img src="img/0_logo.png" alt="Logo do casamento" style="width:60px;" class="rounded-pill mx-auto d-block img-fluid shadow rounded bg-body">  
+      </a>
+    </div>
+
   </body>
-    
 
 </html>
